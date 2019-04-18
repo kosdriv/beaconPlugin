@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-beaconscan",
+  "version": "0.0.1",
+  "description": "An Android Cordova plugin that monitors a specific beacon.",
+  "cordova": {
+    "id": "cordova-plugin-beaconscan",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kosdriv/beaconPlugin.git"
+  },
+  "keywords": [
+    "Toast",
+    "Notification",
+    "Message",
+    "Alert",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Konstantinos Drivas <kosdriv84@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kosdriv/beaconPlugin/issues"
+  },
+  "homepage": "https://github.com/kosdriv/beaconPlugin/"
+}

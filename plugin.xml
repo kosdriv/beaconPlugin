@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-beaconplugin" version="0.0.1">
+    <name>BeaconScanPlugin</name>
+
+    <description>An Android Cordova plugin that monitors a specific beacon.</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,beacon,monitoring</keywords>
+    <repo>https://github.com/kosdriv/beaconPlugin</repo>
+    <issue>https://github.com/kosdriv/beaconPlugin/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/BeaconScanPlugin.js" name="BeaconScanPlugin">
+        <clobbers target="cordova.plugins.BeaconScanPlugin" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="BeaconScanPlugin">
+                <param name="android-package" value="com.smartnav.cordova.plugin.BeaconScanPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/BeaconScanPlugin.java" target-dir="src/com/smartnav/cordova/plugin" />
+    </platform>
+</plugin>
